@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // Replace your password!!!
-mongoose.connect("mongodb+srv://frank40609:sygu@cluster0.zew3s.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://frank40609:<password>@cluster0.zew3s.mongodb.net/todolistDB");
 
 const itemsSchema = mongoose.Schema({
   name: {
