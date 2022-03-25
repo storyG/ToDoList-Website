@@ -12,7 +12,9 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+
+// Replace your password!!!
+mongoose.connect("mongodb+srv://frank40609:sygu@cluster0.zew3s.mongodb.net/todolistDB");
 
 const itemsSchema = mongoose.Schema({
   name: {
